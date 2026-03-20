@@ -1,5 +1,10 @@
 # codex-utils
 
+[![Release](https://img.shields.io/github/v/release/IndraLawliet13/codex-utils?display_name=tag)](https://github.com/IndraLawliet13/codex-utils/releases)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/github/license/IndraLawliet13/codex-utils)](LICENSE)
+[![API](https://img.shields.io/badge/api-openai--compatible-black)](https://github.com/IndraLawliet13/codex-utils)
+
 Lightweight Python helpers for OpenAI-compatible Codex relay endpoints.
 
 `codex-utils` is a small, dependency-free Python library for projects that want a clean interface to:
@@ -32,6 +37,12 @@ pip install .
 
 ```bash
 pip install git+https://github.com/IndraLawliet13/codex-utils.git
+```
+
+### Install a tagged release
+
+```bash
+pip install git+https://github.com/IndraLawliet13/codex-utils.git@v0.1.0
 ```
 
 ### Import without installation
@@ -136,6 +147,10 @@ except CodexAPIError as exc:
 A runnable example is available at:
 
 - `examples/quickstart.py`
+
+## Changelog
+
+See `CHANGELOG.md` for release history.
 
 ## License
 
