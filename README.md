@@ -1,29 +1,40 @@
 # codex-utils
 
-Lightweight Python helpers for working with an OpenAI-compatible Codex relay.
+Lightweight Python helpers for OpenAI-compatible Codex relay endpoints.
 
-This package uses only the Python standard library and is suitable for Termux, Linux servers, and simple automation scripts.
+`codex-utils` is a small, dependency-free Python library for projects that want a clean interface to:
 
-## Features
+- `POST /v1/chat/completions`
+- `POST /v1/responses`
+- SSE streaming for both APIs
+- local chat-session helpers with history management
 
-- Chat Completions, non-stream
-- Chat Completions, SSE stream
-- Responses API, non-stream
-- Responses API, SSE stream
-- Local chat-session helper with history management
+It is designed to work well in lightweight environments such as Termux, VPS automation scripts, and simple backend services where adding third-party HTTP clients is unnecessary.
+
+## Highlights
+
 - No external dependencies
+- Chat Completions support
+- Responses API support
+- SSE stream helpers
+- Local conversation/session helper
+- Works with plain Python standard library
 
 ## Installation
 
-### Local usage
-
-Install directly from the folder:
+### Install from the repository folder
 
 ```bash
 pip install .
 ```
 
-### Direct import without install
+### Install directly from GitHub
+
+```bash
+pip install git+https://github.com/IndraLawliet13/codex-utils.git
+```
+
+### Import without installation
 
 ```bash
 PYTHONPATH=. python3 your_script.py
@@ -82,7 +93,7 @@ print(text)
 
 ### `CodexClient`
 
-Methods:
+Main methods:
 
 - `models()`
 - `chat(messages, ...)`
@@ -98,7 +109,7 @@ Methods:
 
 ### `CodexChatSession`
 
-Methods:
+Session helper methods:
 
 - `ask(prompt, ...)`
 - `ask_stream(prompt, ...)`
@@ -122,4 +133,10 @@ except CodexAPIError as exc:
 
 ## Example script
 
-A runnable example is provided in `examples/quickstart.py`.
+A runnable example is available at:
+
+- `examples/quickstart.py`
+
+## License
+
+MIT. See `LICENSE`.

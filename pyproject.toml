@@ -5,10 +5,30 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "codex-utils"
 version = "0.1.0"
-description = "Lightweight Python helpers for an OpenAI-compatible Codex relay"
+description = "Lightweight Python helpers for OpenAI-compatible Codex relay endpoints"
 readme = "README.md"
 requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "IndraLawliet13" }]
+keywords = ["openai-compatible", "codex", "streaming", "responses-api", "chat-completions"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/IndraLawliet13/codex-utils"
+Repository = "https://github.com/IndraLawliet13/codex-utils"
+Issues = "https://github.com/IndraLawliet13/codex-utils/issues"
 
 [tool.setuptools]
 packages = ["codex_utils"]

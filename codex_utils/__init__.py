@@ -7,6 +7,8 @@ import urllib.error
 import urllib.request
 from typing import Any, Dict, Iterator, List, Optional
 
+__version__ = "0.1.0"
+
 DEFAULT_BASE_URL = os.getenv("CODEX_BASE_URL", "https://codex.indrayuda.my.id/v1").rstrip("/")
 DEFAULT_API_KEY = os.getenv("CODEX_API_KEY", "relay-internal-token")
 DEFAULT_MODEL = os.getenv("CODEX_MODEL", "gpt-5.4")
@@ -430,6 +432,7 @@ def _try_json_loads(text: str) -> Any:
 
 
 __all__ = [
+    "__version__",
     "CodexAPIError",
     "CodexClient",
     "CodexChatSession",
