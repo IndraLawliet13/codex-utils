@@ -33,6 +33,14 @@ It is designed to work well in lightweight environments such as Termux, VPS auto
 pip install .
 ```
 
+### Quick install for local testing
+
+```bash
+git clone https://github.com/IndraLawliet13/codex-utils.git
+cd codex-utils
+pip install .
+```
+
 ### Install directly from GitHub
 
 ```bash
@@ -151,6 +159,11 @@ A runnable example is available at:
 ## Changelog
 
 See `CHANGELOG.md` for release history.
+
+## License
+
+MIT. See `LICENSE`.
+or release history.
 
 ## License
 
