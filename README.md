@@ -163,8 +163,3 @@ See `CHANGELOG.md` for release history.
 ## License
 
 MIT. See `LICENSE`.
-or release history.
-
-## License
-
-MIT. See `LICENSE`.
