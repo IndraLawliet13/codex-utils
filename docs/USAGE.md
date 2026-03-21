@@ -78,8 +78,8 @@ client.responses_stream_text("Jelaskan SSE singkat", print_stream=True)
 from codex_utils import CodexClient
 
 client = CodexClient(
-    base_url="https://your-domain.example/v1",
-    api_key="your-secret-token",
+    base_url="http://127.0.0.1:8787/v1",
+    api_key="relay-dev-token",
     model="gpt-5.4",
     timeout=240,
 )
@@ -138,7 +138,15 @@ Supported environment variables:
 Example:
 
 ```bash
-export CODEX_BASE_URL="https://codex.indrayuda.my.id/v1"
-export CODEX_API_KEY="relay-internal-token"
+export CODEX_BASE_URL="http://127.0.0.1:8787/v1"
+export CODEX_API_KEY="relay-dev-token"
 python3 your_script.py
 ```
+
+## 11. Pairing with codex-slot-relay
+
+Recommended backend relay repo:
+- `https://github.com/IndraLawliet13/codex-slot-relay`
+
+See also:
+- `docs/CODEX_SLOT_RELAY.md`

@@ -7,10 +7,10 @@ import urllib.error
 import urllib.request
 from typing import Any, Dict, Iterator, List, Optional
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
-DEFAULT_BASE_URL = os.getenv("CODEX_BASE_URL", "https://codex.indrayuda.my.id/v1").rstrip("/")
-DEFAULT_API_KEY = os.getenv("CODEX_API_KEY", "relay-internal-token")
+DEFAULT_BASE_URL = os.getenv("CODEX_BASE_URL", "http://127.0.0.1:8787/v1").rstrip("/")
+DEFAULT_API_KEY = os.getenv("CODEX_API_KEY", "relay-dev-token")
 DEFAULT_MODEL = os.getenv("CODEX_MODEL", "gpt-5.4")
 DEFAULT_USER_AGENT = os.getenv("CODEX_USER_AGENT", "Mozilla/5.0")
 DEFAULT_TIMEOUT = int(os.getenv("CODEX_TIMEOUT", "180"))

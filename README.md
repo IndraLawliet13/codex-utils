@@ -24,6 +24,16 @@ It is designed to work well in lightweight environments such as Termux, VPS auto
 - SSE stream helpers
 - Local conversation/session helper
 - Works with plain Python standard library
+- Pairs directly with `codex-slot-relay`
+
+## Recommended pairing
+
+Backend relay repo:
+- `https://github.com/IndraLawliet13/codex-slot-relay`
+
+The two repos are aligned for a simple local setup:
+- relay base URL: `http://127.0.0.1:8787/v1`
+- relay token: `relay-dev-token`
 
 ## Installation
 
@@ -50,7 +60,7 @@ pip install git+https://github.com/IndraLawliet13/codex-utils.git
 ### Install a tagged release
 
 ```bash
-pip install git+https://github.com/IndraLawliet13/codex-utils.git@v0.1.0
+pip install git+https://github.com/IndraLawliet13/codex-utils.git@v0.2.0
 ```
 
 ### Import without installation
@@ -61,8 +71,8 @@ PYTHONPATH=. python3 your_script.py
 
 ## Environment variables
 
-- `CODEX_BASE_URL` default: `https://codex.indrayuda.my.id/v1`
-- `CODEX_API_KEY` default: `relay-internal-token`
+- `CODEX_BASE_URL` default: `http://127.0.0.1:8787/v1`
+- `CODEX_API_KEY` default: `relay-dev-token`
 - `CODEX_MODEL` default: `gpt-5.4`
 - `CODEX_USER_AGENT` default: `Mozilla/5.0`
 - `CODEX_TIMEOUT` default: `180`
@@ -155,6 +165,11 @@ except CodexAPIError as exc:
 A runnable example is available at:
 
 - `examples/quickstart.py`
+
+## Additional docs
+
+- `docs/USAGE.md`
+- `docs/CODEX_SLOT_RELAY.md`
 
 ## Changelog
 
