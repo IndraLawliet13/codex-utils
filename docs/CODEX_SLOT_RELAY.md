@@ -25,6 +25,12 @@ client = CodexClient()
 print(client.ask("Balas satu kata saja: halo"))
 ```
 
+A runnable file is also included:
+
+```bash
+python3 examples/pair_local_relay.py
+```
+
 ## If you want custom values
 
 ```bash

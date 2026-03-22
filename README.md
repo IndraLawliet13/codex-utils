@@ -170,6 +170,7 @@ A runnable example is available at:
 
 - `docs/USAGE.md`
 - `docs/CODEX_SLOT_RELAY.md`
+- `examples/pair_local_relay.py`
 
 ## Changelog
 
